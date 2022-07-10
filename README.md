@@ -50,3 +50,21 @@ A `type-check` script is also added to `package.json`, which runs TypeScript's `
 bit init
 ```
 
+### settings 
+
+* set bit cloud scope
+
+```
+diff -u workspace.jsonc workspace.jsonc.after
+--- workspace.jsonc	2022-07-10 15:02:28.000000000 +0900
++++ workspace.jsonc.after	2022-07-10 15:07:59.000000000 +0900
+@@ -27,7 +27,7 @@
+     /**
+      * default scope for all components in workspace.
+      **/
+-    "defaultScope": "my-scope"
++    "defaultScope": "thirosue.my-scope" ### <------------ modify
+   },
+   /**
+    * main configuration for component dependency resolution.
+```
