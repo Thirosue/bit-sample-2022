@@ -161,3 +161,21 @@ bit tag --all 0.0.1
 ```
 bit export --all
 ```
+
+### Add Card component
+
+```
+bit create react ui/card
+```
+
+```
+bit compile && bit link
+```
+
+```
+bit tag ui/card@0.0.1
+```
+
+```
+bit export ui/card@0.0.1
+```

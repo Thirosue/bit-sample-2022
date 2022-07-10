@@ -15,5 +15,11 @@
         "mainFile": "index.ts",
         "rootDir": "my-scope/ui/button"
     },
+    "ui/card": {
+        "scope": "thirosue.my-scope",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "my-scope/ui/card"
+    },
     "$schema-version": "14.9.0"
 }
