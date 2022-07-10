@@ -73,6 +73,12 @@ https://github.com/Thirosue/bit-sample-2022/commit/72ad4a74200de2abd21a89a79da0c
 
 https://tailwindcss.com/docs/installation
 
+### build
+
+```
+npx tailwindcss -i ./input.css -o ./styles.css --watch
+```
+
 ## Add Component Library
 
 ### make boilerplate
