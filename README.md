@@ -42,15 +42,13 @@ Next.js has built-in TypeScript declarations, so we'll get autocompletion for Ne
 
 A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
 
-## Bit 
-
-### install
+## Bit install
 
 ```
 bit init
 ```
 
-### settings 
+## Bit settings 
 
 * set bit cloud scope
 
@@ -75,3 +73,85 @@ https://github.com/Thirosue/bit-sample-2022/commit/72ad4a74200de2abd21a89a79da0c
 
 https://tailwindcss.com/docs/installation
 
+## Add Component Library
+
+### make boilerplate
+
+```
+bit create react ui/button
+```
+
+### add test dependency
+
+```
+yarn add -D @testing-library/react@12.1.5 @types/jest @types/mocha
+```
+
+### complie & link 
+
+```
+bit compile && bit link
+```
+
+```
+bit tag --all 0.0.1
+```
+
+```
+% bit show ui/button
+┌───────────────────┬────────────────────────────────────────────────────────────┐
+│ id                │ thirosue.my-scope/ui/button@0.0.1                          │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ scope             │ thirosue.my-scope                                          │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ name              │ ui/button                                                  │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ env               │ teambit.react/react                                        │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ package name      │ @thirosue/my-scope.ui.button                               │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ deprecated        │ false                                                      │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ main file         │ index.ts                                                   │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ files             │ button.composition.tsx                                     │
+│                   │ button.docs.mdx                                            │
+│                   │ button.spec.tsx                                            │
+│                   │ button.tsx                                                 │
+│                   │ index.ts                                                   │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ dev files         │ button.spec.tsx (teambit.defender/tester)                  │
+│                   │ button.composition.tsx (teambit.compositions/compositions) │
+│                   │ button.docs.mdx (teambit.docs/docs)                        │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ aspects           │ teambit.envs/envs                                          │
+│                   │ teambit.react/react                                        │
+│                   │ teambit.compilation/compiler                               │
+│                   │ teambit.component/dev-files                                │
+│                   │ teambit.compositions/compositions                          │
+│                   │ teambit.pkg/pkg                                            │
+│                   │ teambit.docs/docs                                          │
+│                   │ teambit.dependencies/dependency-resolver                   │
+│                   │ teambit.pipelines/builder                                  │
+│                   │ teambit.compilation/compiler                               │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ dependencies      │ core-js@^3.0.0- (package)                                  │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ dev dependencies  │ @types/react@^17.0.8------------------- (package)          │
+│                   │ @testing-library/react@12.1.5---------- (package)          │
+│                   │ @types/testing-library__jest-dom@5.9.5- (package)          │
+│                   │ @babel/runtime@7.12.18----------------- (package)          │
+│                   │ @types/jest@^26.0.0-------------------- (package)          │
+│                   │ @types/react-dom@^17.0.5--------------- (package)          │
+│                   │ @types/node@12.20.4-------------------- (package)          │
+├───────────────────┼────────────────────────────────────────────────────────────┤
+│ peer dependencies │ react-dom@^16.8.0 || ^17.0.0- (package)                    │
+│                   │ react@^16.8.0 || ^17.0.0----- (package)                    │
+└───────────────────┴────────────────────────────────────────────────────────────┘
+```
+
+## export
+
+```
+bit export --all
+```
