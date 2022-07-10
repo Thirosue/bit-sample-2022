@@ -68,3 +68,5 @@ diff -u workspace.jsonc workspace.jsonc.after
    /**
     * main configuration for component dependency resolution.
 ```
+
+https://github.com/Thirosue/bit-sample-2022/commit/72ad4a74200de2abd21a89a79da0c7152977912d#diff-2a06d80763063354400c5849161247b69496304dabcc553538efde2df2b71934
